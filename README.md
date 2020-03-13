@@ -20,6 +20,8 @@
 
 * [github地址](https://github.com/haomo-studio/hm-uniapp-visits-card)
 
+* [gitee地址](https://gitee.com/haomo/hm-uniapp-visits-card)
+
 毫末科技将长期迭代本组件。需要技术支持，请进钉钉群：
 
 <img width="250" src="http://downloads.haomo-tech.com/%E6%AF%AB%E6%9C%ABuniapp%E7%BB%84%E4%BB%B6%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81.jpg">
@@ -46,7 +48,7 @@ export default {
 ```html
 <template>
   <div class="test-component">
-    <hm-visits-card></hm-visits-card>
+    <hm-visits-card :options="options"></hm-visits-card>
   </div>
 </template>
 <script>
@@ -56,6 +58,18 @@ export default {
   components: { HmVisitsCard },
   data() {
     return {
+     options: {
+         text: '日常访问',
+          img:
+            'staticimg_24227_0_1.png',
+          jiantouimg:
+            '/static/hm-visits-card/images/img_24227_0_2.png',
+          num: '+3.49%',
+          nums: '178080',
+          unit: '个',
+          shopLogo:
+            '/static/hm-visits-card/images/img_24227_0_0.png'
+        }
     };
   },
   methods: {
@@ -79,7 +93,13 @@ options对象各个属性说明如下：
 
 | 属性名        | 类型     | 默认值 | 说明                                                                       |
 |-----------   |---------|--------|----------------------------------------------------------------------------|
-| title        | String  | -      | 标题文字                                                                   |
+| text        | String  | -      | 标题文字                                                                   |
+| img        | String  | -      | 图片                                                                   |
+| jiantouimg        | String  | -      | 图片                                                                   |
+| num        | String  | -      | 增长百分比                                                                   |
+| nums        | String  | -      | 增长量                                                                   |
+| unit        | String  | -      | 单位                                                                   |
+| shopLogo        | String  | -      | 图片                                                                   |
 
 ## 事件说明
 
@@ -89,6 +109,6 @@ options对象各个属性说明如下：
 
 ## 更新日志
 
-### 0.0.1(2020-03-07)
+### 0.0.1(2020-03-13)
 
 * 完成第一个版本

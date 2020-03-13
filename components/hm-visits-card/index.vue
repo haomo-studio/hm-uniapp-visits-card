@@ -35,14 +35,14 @@ export default {
         return {
           text: '日常访问',
           img:
-            './images/img_24227_0_1.png',
+            '/static/hm-visits-card/images/img_24227_0_1.png',
           jiantouimg:
-            './images/img_24227_0_2.png',
+            '/static/hm-visits-card/images/img_24227_0_2.png',
           num: '+3.49%',
           nums: '178080',
           unit: '个',
           shopLogo:
-            './images/img_24227_0_0.png'
+            '/static/hm-visits-card/images/img_24227_0_0.png'
         };
       }
     }
